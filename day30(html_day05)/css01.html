@@ -1,0 +1,31 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display 속성 inherit</title>
+  <style>
+    .parent{
+      display: flex;
+      background-color: brown;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .child{
+      display: inherit; /* 부모요소의 display 속성을 상속받음*/
+      background-color: greenyellow;
+      margin: 5px;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child">div1</div>
+    <div class="child">div2</div>
+  </div>
+</body>
+</html>

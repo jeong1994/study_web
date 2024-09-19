@@ -1,0 +1,11 @@
+span {
+  background-color: rgb(131, 129, 129);
+  /* 인라인 요소는 해당 컨텐츠의 크기만큼만 차지하기 때문에 정렬 될 수 없다
+  인라인 요소는 text-align이 불가능 하다 */
+}
+
+div {
+  background-color: aqua;
+  text-align: center;
+  /* div태그는 블록 요소기 때문에 한 줄을 모두 차지하므로 정렬이 가능하다 */
+}

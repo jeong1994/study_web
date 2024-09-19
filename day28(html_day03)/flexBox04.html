@@ -1,0 +1,51 @@
+<!-- 14번 : flexbox (레이아웃 구성) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃 3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .header, .footer {
+      background-color: yellow;
+      height: 100px;
+    }
+
+    .section-container {
+      background-color: black;
+      height: 500px;
+      /* section-a와 section-b를 가로로 배치해야함 */
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .section-a, .section-b {
+      background-color: bisque;
+      height: 100%; /*%단위는 부모요소 크기의 몇% 인지 의미*/
+      width: 200px;
+    }
+
+    .section-c {
+      background-color: powderblue;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="header">header</div>
+    <div class="section-container">
+      <div class="section-a">section-a</div>
+      <div class="section-c">section-c</div>
+      <div class="section-b">section-b</div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+</html>

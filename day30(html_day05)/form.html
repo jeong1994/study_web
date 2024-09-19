@@ -1,0 +1,61 @@
+<!-- 6번 : form 최종예제 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form 최종예제</title>
+</head>
+<body>
+  <form action="" method="">
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <label for="name">이름</label>
+      <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required autofocus>
+      <br>
+      <label for="age">나이</label>
+      <input type="number" id="age" name="age" placeholder="나이를 입력하세요" min="0">
+      <br>
+      <label for="gender">성별선택</label>
+      남자 <input type="radio" id="gender_male" name="gender" value="남자" required>
+      여자 <input type="radio" id="gender_female" name="gender" value="여자" required>
+      <br>
+      <label for="phone">핸드폰번호</label>
+      <input type="text" id="phone" name="phone" placeholder="010-0000-0000형식으로 입력하세요">
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>주소</legend>
+      <label for="address1">시</label>
+      <input type="text" id="address1" name="city" placeholder="시를 입력하세요">
+      <br>
+      <label for="address2">구</label>
+      <input type="text" id="address2" name="district" placeholder="구를 입력하세요">
+      <br>
+      <label for="address3">동</label>
+      <input type="text" id="address3" name="neighborhood" placeholder="동을 입력하세요">
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>의견작성</legend>
+      <label for="comments">의견</label>
+      <textarea id="comments" name="comments" cols="40" rows="5" required></textarea>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>선호 제품</legend>
+      <label for="product">사고싶은 제품을 선택하세요</label>
+      <select id="product" required>
+        <option value="laptop">컴퓨터</option>
+        <option value="tablet">태블릿PC</option>
+        <option value="smartphone">핸드폰</option>
+      </select>
+    </fieldset>
+    <br>
+    <input type="submit">
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+    <button type="button">버튼</button>
+  </form>
+</body>
+</html>

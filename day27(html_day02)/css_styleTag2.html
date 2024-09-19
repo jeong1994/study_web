@@ -1,0 +1,46 @@
+<!-- 12번 : css 적용방법 2 => id, class 선택자 지정 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>id와 class</title>
+
+  <style>
+    #id-test1{
+      color: blue;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    #id-test2{
+      background-color: yellow;
+    }
+    
+    .class-test{
+      color: cadetblue;
+      font-size: 50px;
+      background-color: blanchedalmond;
+    }
+    
+    div{
+      color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <h1>id와 class</h1>
+  <div>요소2</div>
+  <!-- span*2{요소$} -->
+  <span id="id-test1">span요소1</span>
+  <span class="class-test">span요소2</span>
+  <!-- p*2{요소$} 
+   중괄호 안에 컨텐츠 내용을 작성할 수 있다
+   $를 입력하면 1부터 순차적으로 숫자가 나온다-->
+  <p id="id-test2">p요소1</p>
+  <p class="class-test">p요소2</p>
+  <!-- div*2{요소$} -->
+  <div class="class-test">요소1</div>
+  <div>요소2</div>
+</body>
+</html>

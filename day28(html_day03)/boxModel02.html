@@ -1,0 +1,50 @@
+<!-- 7번 : 박스모델(마진, 패딩설정) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스모델</title>
+  <style>
+    div {
+      background-color: skyblue;
+      border: 3px solid red;
+      width: 100px;
+      height: 100px;
+
+      /* 마진 방향별 설정 */
+      /* margin-left: 50px;
+      margin-bottom: 20px; */
+
+      /* 마진 왼쪽 30, 아래쪽 50
+      top부터 시계방향 top right bottom left 
+      숫자 4개 설정시에 적용*/
+      /* margin: 0 0 50px 30px;
+      padding-top: 25px; */
+
+      /* 숫자 2개 설정시 상하 좌우 쌍으로 설정됨 */
+      margin: 30px auto;
+      /* auto 값을 주면 알어서 좌우 여백을 동일하게 맞춰준다
+      화면 크기에 따라 알아서 중앙을 유지하게 해준다 */
+      text-align: center;
+
+      border-radius: 100px;
+      /* border_redius에 값을 크게 주면 점점 원형에 가깝게 바뀐다
+      원으로 바꾸고 싶다면 값을 px단위가 아닌 %단위로 설정 */
+    }
+
+  </style>
+</head>
+<body>
+  <div>컨텐츠</div>
+  <div>컨텐츠</div>
+  <div>컨텐츠</div>
+  <div>컨텐츠</div>
+  <div>컨텐츠</div>
+  <div>컨텐츠</div>
+  <div>컨텐츠</div>
+  <div>컨텐츠</div>
+  <div>컨텐츠</div>
+  <div>컨텐츠</div>
+</body>
+</html>

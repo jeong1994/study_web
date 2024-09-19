@@ -1,0 +1,16 @@
+* {
+  margin: 0px;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+p {
+  color: powderblue;
+}
+
+#p-test {
+  color: red;
+}

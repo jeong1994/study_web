@@ -1,0 +1,42 @@
+<!-- 3번 : fieldset과 legend -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fieldset과 legend</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <label for="name">이름 : </label>
+      <input type="text" id="name" placeholder="이름을 입력하세요" required autofocus>
+      
+      <label for="age">나이 : </label>
+      <input type="text" placeholder="나이를 입력하세요" id="age">
+
+      <label for="email">이메일 : </label>
+      <input type="text" id="email" readonly>
+      <br>
+      <label for="gender">성별 : </label>
+      남자<input type="radio" id="gender" name="gender1" value="남자" required>
+      여자<input type="radio" id="gender" name="gender1" value="여자" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>주소</legend>
+       <label for="address1">시</label>
+       <input type="text" id="address1" name="city">
+       <br>
+       <label for="address2">구</label>
+       <input type="text" id="address2" name="district">
+       <br>
+       <label for="address3">동</label>
+       <input type="text" id="address3" name="neighborhood" placeholder="동을 입력하셈">
+      </fieldset>
+      <br>
+      <input type="submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- 11번 : flex box -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex box</title>
+  <style>
+    .container {
+      width: 700px;
+      height: 300px;
+      border: 1px solid black;
+
+      display: flex;
+      /* display : flex를 지정하면 부모요소인 컨테이너 내부의 모든 자식 요소들이 가로로 배치된다 
+      주축의 방향은 가로방향, 행방향이다*/
+      flex-direction: column;
+      /* flex-diretion 속성은 주축의 방향을 설정하는 속성. 기본적으로 row로 되어있다 */
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      border: 1px solid cadetblue;
+      background-color: cadetblue;
+      border-radius: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">div1</div>
+    <div class="item">div2</div>
+    <div class="item">div3</div>
+    <div class="item">div4</div>
+    <div class="item">div5</div>
+  </div>
+</body>
+</html>

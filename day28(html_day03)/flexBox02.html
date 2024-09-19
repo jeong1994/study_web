@@ -1,0 +1,42 @@
+<!-- 12번 : flexbox (레이아웃 구성) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃 1</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-container {
+      border: 3px solid black;
+      /* 컨테이너가 갖는 크기 확인 */
+    }
+
+    .header, .footer{
+      background-color: pink;
+      height: 120px;
+    }
+    
+    .main {
+      background-color: blueviolet;
+      height: 480px;
+    }
+    
+    /* .footer {
+      background-color: pink;
+      height: 120px;
+    } */
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="header">header</div>
+    <div class="main">main</div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+</html>

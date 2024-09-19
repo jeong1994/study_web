@@ -1,0 +1,16 @@
+* {
+  background-color: beige;
+}
+
+p {
+  color: brown;
+}
+
+h1 {
+  /* background-color: darkorange; */
+  color: darkgray !important;
+}
+
+.p-test {
+  color: blue;
+}

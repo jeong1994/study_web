@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습</title>
+
+  <style>
+    .rectangle{
+      border: 3px solid black;
+      width: 150px;
+      height: 150px;
+    }
+
+    .div-container{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* .div1{
+      position: static;
+    } */
+
+    .div1 > :nth-child(1){
+      background-color: red;
+    }
+
+    .div1 > :nth-child(2){
+      background-color: orange;
+      position: relative;
+      bottom: 100px;
+      left: 50px;
+    }
+    
+    .div1 > :nth-child(3){
+      background-color: yellow;
+      position: relative;
+      bottom: 200px;
+      left: 100px;
+    }
+    
+    /* .div2{
+      position: static;
+      } */
+      
+      .div2 > :nth-child(1){
+        background-color: green;
+      }
+      
+      .div2 > :nth-child(2){
+        background-color: blue;
+        position: relative;
+        bottom: 100px;
+        right: 50px;
+        z-index: 1;
+      }
+      
+      .div2 > :nth-child(3){
+        background-color: navy;
+        position: relative;
+        bottom: 200px;
+        right: 100px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="div-container">
+      <div class="div1">
+        <div class="rectangle">box1</div>
+        <div class="rectangle">box2</div>
+        <div class="rectangle">box3</div>
+      </div>
+      <div class="div2">
+        <div class="rectangle">box4</div>
+        <div class="rectangle">box5</div>
+        <div class="rectangle">box6</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

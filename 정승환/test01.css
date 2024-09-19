@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background-color: black;
+  height: 100px;
+}
+
+main {
+  background-color: beige;
+  height: 700px;
+  padding: 20px;
+}
+
+.header-content {
+  height: 55%; /* 쌤 이거 요구사항대로 70%하면 안맞던데여... */
+}
+
+.nav-list {
+  background-color: cadetblue;
+  display: flex;
+  list-style-type: none;
+}
+
+.li--menu {
+  /* border: 1px solid black; */
+  line-height: 30px;
+  width: 80px;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+th {
+  height: 50px;
+  background-color: lightgray;
+}
+
+.img {
+  width: 150px;
+  height: 150px
+}
+
+td {
+  text-align: center;
+}

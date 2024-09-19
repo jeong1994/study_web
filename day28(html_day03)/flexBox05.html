@@ -1,0 +1,77 @@
+<!-- 15번 : 시맨틱 태그를 이용한 네비게이션 바 만들기 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네비게이션 바</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: arial, sans-serif;
+    }
+
+    header, footer {
+      background-color: black;
+      height: 100px;
+    }
+
+    main {
+      background-color: beige;
+      height: 500px;
+    }
+
+    .header-content {
+      height: 70%;
+      
+    }
+
+    /* .nav {
+
+    } */
+
+    .nav-list {
+      background-color: cadetblue;
+      display: flex;
+      list-style: none;
+    }
+
+    li {
+      /* border: 1px solid white; 확인용 */
+      width: 80px;
+      text-align: center;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <!--  -->
+    </div>
+    <div class="nav">
+      <nav >
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">상품목록</a></li>
+          <li><a href="#">상품등록</a></li>
+          <li><a href="#">주문내역</a></li>
+          <li><a href="#">회원정보</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>main</main>
+  <footer>footer</footer>
+</body>
+</html>

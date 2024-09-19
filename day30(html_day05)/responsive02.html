@@ -1,0 +1,45 @@
+<!-- 8번 : 반응형 웹(미디어 쿼리) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미디어 쿼리</title>
+  <style>
+    *{
+      margin:0;
+      padding: 0;
+    }
+    section{
+      display: flex;
+      justify-content: center;
+    }
+
+    div{
+      background-color: blue;
+      width:20vw;
+      height:20vw;
+      margin :10px;
+    }
+
+    /* @media(width:300px){ */
+    @media (max-width:300px) and (min-width :250px) {
+      div{
+        background-color: red;
+        width: 40vw;
+        height: 40vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!-- 8번 : 디스플레이 속성 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>디스플레이 속성</title>
+  <style>
+    .span-inline {
+      background-color: beige;
+      border: 1px solid red;
+      margin: 10px;
+      padding: 10px;
+
+      /* line-height: 100px; */
+      /* 줄 간격 조절 */
+
+      /* letter-spacing: 10px; */
+      /* 글자간 간격 조절 가능 */
+
+      word-spacing: 15px;
+      /* 단어간 간격 조절 가능 */
+
+      /* width: 100px;
+      height: 100px; 인라인 요소는 컨텐츠 영역 크기 조절이 불가능 */
+    }
+
+    .span-block {
+      display: block;
+      /* display를 block으로 주면 원래 inline이던 박스모델이 블록 요소로 변경된다 */
+      background-color: black;
+      color: white;
+      border: 1px dotted yellow;
+      font-size: 25px;
+      font-weight: bold;
+
+      width: 100px;
+      height: 100px;
+      /* 블록요소는 컨텐츠 크기 조절이 가능하다 */
+      margin: 10px auto;
+      padding: 10px auto; /* 패딩은 오토 적용 안됨 */
+    }
+  </style>
+</head>
+<body>
+  <h1>display : inline</h1>
+  <!-- span.span-inline{span$}*5 -->
+  <span class="span-inline">span1 입니다</span>
+  <span class="span-inline">span2 입니다</span>
+  <span class="span-inline">span3 입니다</span>
+  <span class="span-inline">span4 입니다</span>
+  <span class="span-inline">span5 입니다</span>
+  
+  <h1>display : block</h1>
+  <span class="span-block">span1</span>
+  <span class="span-block">span2</span>
+  <span class="span-block">span3</span>
+  <span class="span-block">span4</span>
+  <span class="span-block">span5</span>
+</body>
+</html>

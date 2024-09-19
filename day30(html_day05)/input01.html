@@ -1,0 +1,44 @@
+<!-- 1번 : form-input -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form-input</title>
+</head>
+<body>
+  <main>
+    <form action="" method="">
+      <div>id : <input type="text"></div>
+      <div>password : <input type="password"></div>
+      <div>
+        <input type="submit" value="로그인">
+      </div>
+      <div>
+        <input type="reset" value="reset">
+      </div>
+      <div>
+        <input type="hidden">
+      </div>
+      <div>
+        <div>radio : </div>
+        <div>
+          <!-- radio 버튼은 name 속성을 같은 값으로 지정해야만 중복선택을 방지할 수 있다 -->
+          <!-- checked는 페이지 진입시 기본으로 선택된다
+            value는 서버에 데이터 전송시 실질적으로 보내지는 값이다 -->
+          선택1 <input type="radio" name="radio1" value="1">
+          선택2 <input type="radio" name="radio1" value="2" checked>
+        </div>
+      </div>
+      <div>
+        <div>check box : </div>
+        <div>
+          선택1 <input type="checkbox" name="checkbox" value="1">
+          선택2 <input type="checkbox" name="checkbox" value="2">
+          선택3 <input type="checkbox" name="checkbox" value="3">
+        </div>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

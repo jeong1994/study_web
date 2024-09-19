@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 테이블과 링크 실습</title>
+</head>
+<body>
+  <h1>애완동물 목록</h1>
+  <table border="1" cellspacing="0">
+    <!-- tr > th*3 :
+     > 태그 안에 자식태그 만들기, 태그*숫자 : 원하는 횟수만큼 태그 반복만들기 -->
+    <thead>
+      <tr>
+        <th>종류</th>
+        <th>이름</th>
+        <th>설명</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- (tr > (td*3))*3 : -->
+      <tr>
+        <td>고양이</td>
+        <td>
+          <a href="https://cdn.sisain.co.kr/news/photo/202405/53124_99734_5711.jpg">별이</a>
+        </td>
+        <td>귀여운 고양이</td>
+      </tr>
+      <tr>
+        <td>햄스터</td>
+        <td>
+          <a href="https://i.namu.wiki/i/BSXOrw-Yx_VLp9vPPRsezkIj90T6OxUzFJpOCFp9Ts5ey3OJPijf2dNpp9Ntn-4r66AaOf2g86kgLR9AVEnlzw.webp" target="_blank">햄토리</a>
+        </td>
+        <td>동글동글 햄스터</td>
+      </tr>
+      <tr>
+        <td>강아지</td>
+        <td>
+          <a href="./img/dog.jpg">치즈</a>
+        </td>
+        <td>멋진 강아지</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>다른 유용한 링크</h2>
+  <ul>
+    <li>
+      <a href="https://www.naver.com">네이버</a>
+    </li>
+    <li>
+      <a href="https://www.google.com">구글</a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/ko/docs/Web/HTML">HTML 튜토리얼</a>
+    </li>
+    <li>
+      <a href="http://127.0.0.1:5500/day27(html_day02)/tag05.html">img</a>
+    </li>
+  </ul>
+</body>
+</html>

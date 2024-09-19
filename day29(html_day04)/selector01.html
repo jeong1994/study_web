@@ -1,0 +1,73 @@
+<!-- 4번 : selector : 고급선택자(연결선택자) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고급선택자 - 연결선택자</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    main, section, div{
+      border: 1px solid black;
+      padding: 20px;
+    }
+
+    main{
+      width: 80%;
+      height: 600px;
+    }
+
+    section{
+      width: 80%;
+      height: 80%;
+      margin: auto;
+    }
+
+    div{
+      width: 80%;
+      margin: 10px 0;
+    }
+
+    /* 하위선택자 : 내 자식요소를 모두 선택한다 */
+    main div{
+      background-color: gainsboro;
+      border-radius: 20px;
+    }
+
+    /* 자식선택자 : 내 바로 아래 포함되어 있는 자식요소를 선택한다 */
+    section > div{
+      background-color: blueviolet;
+    }
+
+    /* 인접형제 선택자 : 바로 다음에 오는 형제요소 하나를 선택한다 */
+    .div3 + div{
+      background-color: yellow;
+    }
+
+    /* 형제 선택자 : 다음에 오는 모든 형제 요소를 선택한다 */
+    .div3 ~ div{
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    main
+    <section>section
+      <div class="div1">div1</div>
+      <div class="div2">
+        <a href="https://wwww.naver.com">div2</a>
+      </div>
+      <div class="div3">
+        <a href="#" id="a-div3">div3</a>
+      </div>
+      <div class="div4">div4</div>
+      <div class="div5">div5</div>
+    </section>
+  </main>
+</body>
+</html>

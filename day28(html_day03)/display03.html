@@ -1,0 +1,33 @@
+<!-- 10번 : 디스플레이 속성 - none 요소 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>none</title>
+  <style>
+    div {
+      background-color: aquamarine;
+      border: 1px solid black;
+
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+
+    .div--none {
+      display: none;
+      /* none을 주면 요소가 사라진다
+      단순히 눈에만 안보이는 것이 아니라 차지하고 있던 영역까지 사라진다 */
+    }
+  </style>
+</head>
+<body>
+  <h1>display : none</h1>
+  <div class="div--none">div1</div>
+  <div class="div--none">div2</div>
+  <div class="div--none">div3</div>
+  <div class="div--none">div4</div>
+  <div class="div">div5</div>
+</body>
+</html>

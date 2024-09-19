@@ -1,0 +1,36 @@
+<!-- 3번 : 테이블 태그 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블 태그</title>
+</head>
+<body>
+  <table border="1" width="500px" height="300px" cellspacing="0"> <!--테이블의 보더 속성은 선을 만들어주고 cellspacing 속성값을 0으로 하면 선이 얇아진다-->
+    <!-- width, height값을 넣으면 테이블이 글씨 크기와 상관 없이 지정한 크기로 고정된다 -->
+    <caption>테이블</caption> <!--테이블의 제목을 알리는 캡션 테그는 아래에 작성해도 테이블 상단에 표시되지만 테이블 태그 안에서 작성해야 하며 위에 작성해야한다-->
+    <tr>
+      <!-- th태그는 컬럼의 제목을 표현
+       굵은 글씨와 가운데 정렬 적용 -->
+      <th>컬럼 제목 1</th> 
+      <th>컬럼 제목 2</th>
+      <th>컬럼 제목 3</th>
+    </tr>
+    <!--tr은 행을 표시-->
+    <tr> 
+      <!--td는 열을 표시-->
+      <td rowspan="2">1행 1열</td> <!--rowspan은 열을 합침
+      속성을 넣은 td가 시작점이 되고 시작열과 아래열을 합친다--> 
+      <td colspan="2">1행 2열</td> <!--colspan은 행을 함침
+      속성을 넣은 td가 시작점으로 시작열과 오른쪽열을 합친다-->
+      <!-- <td>1행 3열</td> 행을 합쳤기 때문에 밀림 을 방지 하고싶다면 합쳤을때 지워질 행을 주석or삭제해야 테이블이 깨지지 않음-->
+    </tr>
+    <tr>
+      <!-- <td>2행 1열</td> 열을 합쳤기 때문에 합쳤을때 지워질 열값을 주석or지워야 테이블이 깨지지 않음-->
+      <td>2행 2열</td>
+      <td>2행 3열</td>
+    </tr>
+  </table>
+</body>
+</html>

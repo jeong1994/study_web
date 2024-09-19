@@ -1,0 +1,62 @@
+<!-- 5번 : selector - 고급선택자(속성선택자) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고급선택자 - 속성선택자</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    main, section, div{
+      border:1px solid black;
+      padding: 20px;
+    }
+    
+    main{
+      width:80%;
+      height: 600px;
+    }
+
+    section{
+      width:80%;
+      height: 80%;
+      margin:auto;
+    }
+    div{
+      width: 80%;
+      margin: 10px 0;
+    }
+
+    a[id]{
+      color: red;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a[href="https://www.naver.com"]{
+      color: aqua;
+      font-size: 25px;
+      text-decoration: none;
+    }
+    
+  </style>
+</head>
+<body>
+  <main>main
+    <section>section
+      <div class="div1">div1</div>
+      <div class="div2">
+        <a href="https://www.naver.com">div2</a></div>
+      <div class="div3">
+        <a href="#" id="a-div3">div3</a></div>
+      <div class="div4">div4</div>
+      <div class="div5">div5</div>
+    </section>
+  </main>
+</body>
+</html>
